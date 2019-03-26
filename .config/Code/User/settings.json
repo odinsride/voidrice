@@ -1,0 +1,18 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dracula",
+    "editor.tabSize": 2,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code'",
+    "eslint.validate": [
+        "javascript", 
+        "javascriptreact", 
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 16
+}

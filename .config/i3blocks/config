@@ -2,21 +2,6 @@ command=~/.scripts/statusbar/$BLOCK_NAME
 separator_block_width=15
 markup=pango
 
-[record]
-command=cat /tmp/recordingicon
-interval=once
-signal=9
-
-[music]
-label=🎼
-interval=once
-signal=11
-
-[news]
-label=📰
-interval=once
-signal=6
-
 [pacpackages]
 label=📦
 interval=once
@@ -35,33 +20,33 @@ label=📬
 interval=180
 signal=12
 
-#[memory]
-#interval=30
-#label=🧠
+[memory]
+interval=30
+label=mem:
 
-#[cpu]
-#interval=15
-#label=💻
+[cpu]
+interval=15
+label=cpu:
 
-[volume]
-interval=once
-signal=10
+[disk]
+interval=60
+command=disk / "<span color='#ae95c7'>root</span>"
 
-#[disk]
-#interval=60
-#command=disk /
+[disk]
+interval=60
+command=disk /home "<span color='#95aec7'>home</span>"
 
-#[disk]
-#interval=60
-#command=disk /home 🏠
-
-[battery]
-command=battery BAT0
-interval=5
+[disk]
+interval=60
+command=disk /home/sitheris/Storage "<span color='#95aec7'>storage</span>"
 
 [clock]
 label=📅
 interval=30
+
+[volume]
+interval=once
+signal=10
 
 [internet]
 interval=10
